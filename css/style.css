@@ -389,7 +389,7 @@ p {
 }
 
 
-.icons-list-customers {
+.icon-svg-link-customers {
     display: flex;
     width: 168px;
     height: 88px;
@@ -400,12 +400,9 @@ p {
     border-radius: 4px;
 }
 
-.icons-list-customers:hover {    
-    color: var(--color-iris);
-    border-color: var(--color-iris);
-}
 
-.icon-customers:focus {
+.icon-svg-link-customers:hover,
+.icon-svg-link-customers:focus {    
     color: var(--color-iris);
     border-color: var(--color-iris);
 }
