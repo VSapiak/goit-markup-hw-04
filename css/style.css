@@ -411,8 +411,6 @@ p {
     fill: currentColor;
 }
 
-
-
 /*----------------- Footer ------------------*/
 
 .footer .container {
@@ -481,7 +479,7 @@ p {
 }
 
 .icon-svg {
-    fill:var(--color-cloud) ;
+    fill:var(--color-cloud);
 }
 
 /*----------------- Protfolio ------------------*/
