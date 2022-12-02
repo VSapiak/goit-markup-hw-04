@@ -132,7 +132,7 @@ p {
     background-color: var(--color-navy-blue);
     padding-top: 192px;
     padding-bottom: 192px;
-    min-width: 1600px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office\ .jpg");
@@ -259,7 +259,7 @@ p {
     height: 112px;
     margin-bottom: 8px;
     background-color: var(--color-cloud);
-    background-image: url('./images/icons.svg/antenna.svg');
+    background-image: url("/images/icons.svg/antenna.svg");
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 4px;
@@ -271,7 +271,7 @@ p {
     height: 112px;
     margin-bottom: 8px;
     background-color: var(--color-cloud);
-    background-image: url('./images/icons.svg/clock.svg');
+    background-image: url("/images/icons.svg/clock.svg");
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 4px;
@@ -283,7 +283,7 @@ p {
     height: 112px;
     margin-bottom: 8px;
     background-color: var(--color-cloud);
-    background-image: url('./images/icons.svg/diagram.svg');
+    background-image: url("/images/icons.svg/diagram.svg");
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 4px;
@@ -295,7 +295,7 @@ p {
     height: 112px;
     margin-bottom: 8px;
     background-color: var(--color-cloud);
-    background-image: url('./images/icons.svg/astronaut.svg');
+    background-image: url("/images/icons.svg/astronaut.svg");
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 4px;
@@ -333,7 +333,7 @@ p {
     padding: 0;
 }
 
-.list_work .list:not(:last-child) {
+.list_work > .list:not(:last-child) {
     margin-right: 24px;
 }
 
@@ -359,13 +359,9 @@ p {
     margin-right: 24px;
 }
 
-.container-social-user {
-    margin: 8px 16px 32px 16px;
-}
-
 .user-item-svg {
-    padding: 0;
     display: flex;
+    padding: 8px 16px 32px 16px;
 }
 
 .user-icon-svg {
@@ -404,14 +400,20 @@ p {
     border-radius: 4px;
 }
 
-.icons-list-customers:hover {
+.icons-list-customers:hover {    
     color: var(--color-iris);
     border-color: var(--color-iris);
 }
 
-.icon-customers {
+.icon-customers:focus {
+    color: var(--color-iris);
+    border-color: var(--color-iris);
+}
+
+.icon-customers {   
     fill: currentColor;
 }
+
 
 
 /*----------------- Footer ------------------*/
@@ -481,7 +483,6 @@ p {
     background-color: var(--color-green);
 }
 
-
 .icon-svg {
     fill:var(--color-cloud) ;
 }
@@ -545,13 +546,13 @@ p {
     margin-left: 24px;
 }
 
-.item-filter {
-    height: 420px;
+.container-card {
     border: 0.5px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     background-color: var(--color-white);
 }
 
-.item-filter:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+.container-card:hover,
+.container-card:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);;
+}       
